@@ -1,0 +1,20 @@
+{
+  "author": "alancnet",
+  "dependencies": {
+    "lodash": "^4.6.1",
+    "rx": "^4.0.8",
+    "uuid": "^2.0.1"
+  },
+  "description": "RPC over object stream so you can pipe observables over any transport that you can serialize objects to.",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "rx-rpc",
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "0.0.1"
+}
