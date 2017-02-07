@@ -2,7 +2,7 @@
   "author": "alancnet",
   "dependencies": {
     "lodash": "^4.6.1",
-    "rx": "^4.0.8",
+    "rxjs": "^5.1.0",
     "uuid": "^2.0.1"
   },
   "description": "RPC over object stream so you can pipe observables over any transport that you can serialize objects to.",
@@ -16,5 +16,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.0.2"
+  "version": "0.1.0"
 }

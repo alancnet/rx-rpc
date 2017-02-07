@@ -1,5 +1,5 @@
 'use strict';
-const rx = require('rx');
+const rx = require('rxjs');
 const Observable = rx.Observable;
 const chai = require('chai');
 chai.config.includeStack = true;
@@ -8,7 +8,7 @@ global.expect = chai.expect;
 
 const RxRpc = require('..').RxRpc;
 describe('something', () => {
-    it('should return non-observable data types as Observable.just', () => {
+    it('should return non-observable data types as Observable.of', () => {
         const logic = {
             echo(v) {
                 return v;
@@ -25,7 +25,7 @@ describe('something', () => {
     it('should pipe returned observables', () => {
         const logic = {
             echo(v) {
-                return Observable.just(v).repeat();
+                return Observable.of(v).repeat().take(100);
             }
         };
         const left = new RxRpc({provider: logic});
